@@ -1,0 +1,23 @@
+#peirce_slide {
+  background: url('../img/charles_peirce.jpg');
+}
+
+.navbar-brand {
+  color: #FFF !important;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1), 0 0 30px rgba(0,0,0,.4);
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color: #000 !important;
+}
+
+.content {
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#contact {
+  text-align: center;
+}
