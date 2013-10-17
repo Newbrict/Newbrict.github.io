@@ -27,7 +27,12 @@
           <a class="navbar-brand pulse animated" href="#">Dimitar Dimitrov</a>
         </div>
         <ul class="nav navbar-nav">
-          <li><a href="#">Projects</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#peirce-logic">Peirce Logic</a></li>
+            </ul>
+          </li>
           <li><a href="https://github.com/Newbrict">Github</a></li>
           <li><a href="files/resume.pdf">Résumé</a></li>
         </ul>
@@ -35,25 +40,22 @@
     </div>
 
     <div class="content">
-      <div class="row">
-        <div class="col-sm-4" id="contact">
-          <img class="img-circle" src="img/me.jpg" alt="That's me!" height=140 width=140>
-          <h2>Contact me</h2>
-          <p id="email">                  </p>
-        </div>
-        <div class="col-sm-8">
-          <div class="well">
-            <p>I am a full-time Sophmore at <a href="http://rpi.edu/">Rensselaer Polytechnic Institute</a> working towards a bachelor's degree in computer science. I enjoy non-trivial problem solving and learning new things. I am experienced in many technologies including Linux, C++, and Javascript. please view <a href="files/resume.pdf">my résumé</a> for a full description.</p>
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-sm-3" id="contact">
+            <img class="img-circle" src="img/me.jpg" alt="That's me!" height=140 width=140>
+            <h2>Contact me</h2>
+            <p id="email">                  </p>
+          </div>
+          <div class="col-sm-9">
+            <div class="well">
+              <p>I am a full-time Sophmore at <a href="http://rpi.edu/">Rensselaer Polytechnic Institute</a> working towards a bachelor's degree in computer science. I enjoy non-trivial problem solving and learning new things. I am experienced in many technologies including Linux, C++, and Javascript. please view <a href="files/resume.pdf">my résumé</a> for a full description.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container marketing">
-
         <!-- START THE FEATURETTES -->
-
         <hr class="featurette-divider">
-
-        <div class="row featurette" id="Peirce-Logic">
+        <div class="row featurette" id="peirce-logic">
           <div class="col-sm-6">
             <h2 class="featurette-heading">Peirce Logic</h2>
             <p class="lead">An open source web application using the Raphaël SVG library for propositional logic proofs using existential graphs, visual form of logic invented by Charles Peirce. This is the first real implementation of existential graphs and is meant to be used for education.</p>
