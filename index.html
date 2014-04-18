@@ -31,6 +31,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#peirce-logic">Peirce Logic</a></li>
+              <li><a href="#fe26">Fe[26]</a></li>
             </ul>
           </li>
           <li><a href="https://github.com/Newbrict">Github</a></li>
@@ -50,7 +51,7 @@
           </div>
           <div class="col-sm-9">
             <div class="well">
-              <p>I am a full-time fourth semester student at <a href="http://rpi.edu/">Rensselaer Polytechnic Institute</a> working towards my bachelor's degree in computer science. I enjoy non-trivial problem solving and learning new things. I am experienced in many technologies including Linux, Go, and Javascript. please view <a href="files/resume.pdf">my résumé</a> for a full description.</p>
+              <p>I am a full-time fifth semester student at <a href="http://rpi.edu/">Rensselaer Polytechnic Institute</a> working towards my bachelor's degree in computer science. I enjoy non-trivial problem solving and learning new things. I am experienced in many technologies including Linux, Go, and Javascript. please view <a href="files/resume.pdf">my résumé</a> for a full description.</p>
             </div>
           </div>
         </div>
@@ -60,11 +61,23 @@
           <div class="col-sm-6">
             <h2 class="featurette-heading">Peirce Logic</h2>
             <p class="lead">An open source web application using the Raphaël SVG library for propositional logic proofs using existential graphs, visual form of logic invented by Charles Peirce. This is the first real implementation of existential graphs and is meant to be used for education.</p>
-            <a class="btn btn-info" href="https://github.com/CurryBoy/Peirce-Logic">GitHub</a> 
-            <a class="btn btn-success" href="https://peirce-logic.appspot.com">Try it out</a> 
+            <a class="btn btn-info" href="https://github.com/CurryBoy/Peirce-Logic">GitHub</a>
+            <a class="btn btn-success" href="https://peirce-logic.appspot.com">Try it out</a>
           </div>
           <div class="col-sm-6">
-            <img class="featurette-image img-responsive" src="img/peirce-small.png" alt="Peirce Logic">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+        <!-- START THE FEATURETTES -->
+        <div class="row featurette rightside" id="fe26">
+          <div class="col-sm-6">
+          </div>
+          <div class="col-sm-6">
+            <h2 class="featurette-heading">Fe[26]</h2>
+            <p class="lead">An astronomy themed 2048 clone, I made this as a creative project for my <a href="https://sites.google.com/site/matthewnewbyhome/">Stars, Galaxies, and The Universe</a> class. This was mentioned on <a href="http://space.io9.com/stellar-fusion-is-shockingly-addictive-1564152075">io9</a> </p>
+            <a class="btn btn-info" href="https://github.com/Newbrict/Fe26">GitHub</a>
+            <a class="btn btn-success" href="https://newbrict.github.io/Fe26">Try it out</a>
           </div>
         </div>
         <hr class="featurette-divider">
@@ -73,7 +86,7 @@
         <!-- FOOTER -->
         <footer>
           <p class="pull-right"><a href="#">Back to top</a></p>
-          <p>&copy; 2013 Dimitar Dimitrov.</p>
+          <p>&copy; 2014 Dimitar Dimitrov.</p>
         </footer>
       </div>
 
@@ -84,68 +97,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
+    <script src="js/utils.js"></script>
   </body>
-<script type="text/javascript">
-for (var j = 0; j < 18; j++) {
-	var yeehah = function() {
-		var i = j;
-		setTimeout(function() {
-			var n = "new";
-			var o = "brict" + "@g";
-			var b = "mail.com"
-			var o = n + o + b;
-			var t = document.getElementById('email');
-			var s = t.innerHTML;
-			t.innerHTML = s.slice(0,i) + o[i] + s.slice(i+1,s.length);
-		}, Math.floor(Math.random()*1500));
-	}();
-}
-</script>
-
-<script type="text/javascript">
-
-   $(document).ready(function()
-   {         
-      //
-      // jQuery SmoothScroll | Version 18-04-2013
-      //
-
-      $('a[href*=#]').click(function() {
-
-         if($(this).parent().hasClass('carousel') || $(this).attr('href').indexOf('javascript')>-1) return;
-
-         // duration in ms
-         var duration=1000;
-
-         // easing values: swing | linear
-         var easing='swing';
-
-         // get / set parameters
-         var newHash=this.hash;
-         var oldLocation=window.location.href.replace(window.location.hash, '');
-         var newLocation=this;
-
-         // make sure it's the same location      
-         if(oldLocation+newHash==newLocation)
-         {
-            // get target
-            var target=$(this.hash+', a[name='+this.hash.slice(1)+']').offset().top;
-
-            // adjust target for anchors near the bottom of the page
-            if(target > $(document).height()-$(window).height()) target=$(document).height()-$(window).height();         
-
-            // animate to target and set the hash to the window.location after the animation
-            $('html, body').animate({ scrollTop: target }, duration, easing, function() {
-
-               // add new hash to the browser location
-               window.location.href=newLocation;
-            });
-
-            // cancel default click action
-            return false;
-         }
-      });
-   });
-   
-</script>
 </html>
