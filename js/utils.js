@@ -1,3 +1,14 @@
+var pattern;
+
+// happens when loading this script
+(function() {
+	// trianglify pattern generation
+	var t = new Trianglify();
+	var h = $(document).height(), w = $(document).width();
+	h += 50; // margin from the top
+	pattern = t.generate(w,h);
+})();
+
 // smooth scrolling
 $(document).ready(function() {
 	// jQuery SmoothScroll | Version 18-04-2013
@@ -44,10 +55,5 @@ $(document).ready(function() {
 	}
 
 	// trianglify background
-	var t = new Trianglify();
-	var h = $(document).height(), w = $(document).width();
-	h += 50; // margin from the top
-	var pattern = t.generate(w,h);
 	$("body").attr('style', 'background: '+pattern.dataUrl);
-
 });
