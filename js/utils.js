@@ -3,7 +3,7 @@ var pattern;
 // happens when loading this script
 (function() {
 	// trianglify pattern generation
-	var t = new Trianglify();
+	var t = new Trianglify({noiseIntensity: 0});
 	var h = $(document).height(), w = $(document).width();
 	h += 50; // margin from the top
 	pattern = t.generate(w,h);
