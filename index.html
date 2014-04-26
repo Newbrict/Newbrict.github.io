@@ -21,23 +21,31 @@
   </head>
 <!-- NAVBAR ================================================== -->
   <body>
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
           <a class="navbar-brand" href="#">Dimitar Dimitrov</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#peirce-logic">Peirce Logic</a></li>
-              <li><a href="#fe26">Fe[26]</a></li>
-            </ul>
-          </li>
-          <li><a href="https://github.com/Newbrict">Github</a></li>
-          <li><a href="files/resume.pdf">Résumé</a></li>
-          <li><a href="files/pub.asc">PGP Public Key</a></li>
-        </ul>
+			  <div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#peirce-logic">Peirce Logic</a></li>
+								<li><a href="#fe26">Fe[26]</a></li>
+							</ul>
+						</li>
+						<li><a href="https://github.com/Newbrict">Github</a></li>
+						<li><a href="files/resume.pdf">Résumé</a></li>
+						<li><a href="files/pub.asc">PGP Public Key</a></li>
+					</ul>
+				</div>
       </div>
     </div>
 
@@ -55,6 +63,11 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container marketing">
+        <h1>Projects</h1>
         <!-- START THE FEATURETTES -->
         <hr class="featurette-divider">
         <div class="row featurette" id="peirce-logic">
