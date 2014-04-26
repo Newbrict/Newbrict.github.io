@@ -1,3 +1,4 @@
+// smooth scrolling
 $(document).ready(function() {
 	// jQuery SmoothScroll | Version 18-04-2013
 	$('a[href*=#]').click(function() {
@@ -25,9 +26,8 @@ $(document).ready(function() {
 			return false;
 		}
 	});
-});
 
-$(document).ready(function() {
+	// chris coyne's email script
 	for (var j = 0; j < 18; j++) {
 		var yeehah = function() {
 			var i = j;
@@ -42,4 +42,12 @@ $(document).ready(function() {
 			}, Math.floor(Math.random()*1500));
 		}();
 	}
+
+	// trianglify background
+	var t = new Trianglify();
+	var h = $(document).height(), w = $(document).width();
+	h += 50; // margin from the top
+	var pattern = t.generate(w,h);
+	$("body").attr('style', 'background: '+pattern.dataUrl);
+
 });

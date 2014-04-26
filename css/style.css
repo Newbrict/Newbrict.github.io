@@ -1,27 +1,46 @@
-#peirce_slide {
-  background: url('../img/charles_peirce.jpg');
+body {
+	background-attachment: fixed !important;
 }
 
 .navbar-brand {
-  color: #FFF !important;
-  text-shadow: 0 1px 0 rgba(0,0,0,.1), 0 0 30px rgba(0,0,0,1);
+	color: #FFF !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,.1), 0 0 30px rgba(0,0,0,1);
+}
+
+.navbar .container {
+	text-align: center;
+}
+
+.navbar-nav, .navbar-header {
+	display: inline-block;
+	float: none;
+	margin: 0 auto;
 }
 
 .navbar-brand:hover {
   text-decoration: none;
   color: #000 !important;
-}
-
-.content {
-  margin-top: 100px;
-  margin-left: 20px;
-  margin-right: 20px;
+	-webkit-animation-name: pulse;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: .15s;
 }
 
 #contact {
-  text-align: center;
+	text-align: center;
 }
 
-.rightside {
+.right-side {
 	text-align: right;
+}
+
+.content {
+	max-width: 750px;
+	margin: 70px auto 20px;
+	padding-top: 20px;
+	background: #FFF;
+
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	box-shadow: 0 1px 0 rgba(0,0,0,.1), 0 0 30px rgba(0,0,0,1);
 }
