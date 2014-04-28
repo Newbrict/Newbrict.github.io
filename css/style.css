@@ -4,16 +4,12 @@ body {
 
 .navbar-brand {
 	color: #FFF !important;
-	text-shadow: 0 1px 0 rgba(0,0,0,.1), 0 0 30px rgba(0,0,0,1);
+	text-shadow: 0 0 4px rgba(0,0,0,.8);
 }
 
 .navbar-brand:hover {
-  text-decoration: none;
-  color: #000 !important;
-	-webkit-animation-name: pulse;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-delay: .15s;
+	color: #000 !important;
+	text-shadow: 0 0 4px rgba(128,128,128,1);
 }
 
 #contact {
@@ -32,5 +28,5 @@ body {
 
 	border-radius: 15px;
 	-moz-border-radius: 15px;
-	box-shadow: 0 1px 0 rgba(0,0,0,.1), 0 0 30px rgba(0,0,0,1);
+	box-shadow: 0 1px 0 rgba(0,0,0,.1), 0 0 20px rgba(0,0,0,0.45);
 }

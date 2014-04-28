@@ -71,24 +71,24 @@
         <!-- START THE FEATURETTES -->
         <hr class="featurette-divider">
         <div class="row featurette" id="peirce-logic">
-          <div class="col-sm-8">
+          <div class="col-sm-10">
             <h2 class="featurette-heading">Peirce Logic</h2>
             <p class="lead">An open source web application using the Raphaël SVG library for propositional logic proofs using existential graphs, visual form of logic invented by Charles Peirce. This is the first real implementation of existential graphs and is meant to be used for education.</p>
             <a class="btn btn-info" href="https://github.com/CurryBoy/Peirce-Logic">GitHub</a>
             <a class="btn btn-success" href="https://peirce-logic.appspot.com">Try it out</a>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-2">
           </div>
         </div>
         <hr class="featurette-divider">
         <!-- /END THE FEATURETTES -->
         <!-- START THE FEATURETTES -->
         <div class="row featurette right-side" id="fe26">
-          <div class="col-sm-4">
+          <div class="col-sm-2">
           </div>
-          <div class="col-sm-8">
+          <div class="col-sm-10">
             <h2 class="featurette-heading">Fe[26]</h2>
-            <p class="lead">An astronomy themed 2048 clone, I made this as a creative project for my <a href="https://sites.google.com/site/matthewnewbyhome/">Stars, Galaxies, and The Universe</a> class. This was mentioned on <a href="http://www.popularmechanics.com/technology/gadgets/video-games/how-accurate-is-fe26-the-fusion-powered-take-on-2048-16729778">Popular Mechanics</a>, <a href="http://www.vox.com/2014/4/22/5639920/the-addictive-2048-game-for-nuclear-fusion-fe-26">Vox</a>, <a href="https://medium.com/starts-with-a-bang/b27c0adbf27f">Medium</a>, and  <a href="http://space.io9.com/stellar-fusion-is-shockingly-addictive-1564152075">io9</a></p>
+            <p class="lead">An astronomy themed 2048 clone, I made this as a creative project for my <a href="https://sites.google.com/site/matthewnewbyhome/">Stars, Galaxies, and The Universe</a> class. This was mentioned on <a href="http://www.popularmechanics.com/technology/gadgets/video-games/how-accurate-is-fe26-the-fusion-powered-take-on-2048-16729778">Popular Mechanics</a>, <a href="http://www.vox.com/2014/4/22/5639920/the-addictive-2048-game-for-nuclear-fusion-fe-26">Vox</a>, <a href="https://medium.com/starts-with-a-bang/b27c0adbf27f">Medium</a>, <a href="http://space.io9.com/stellar-fusion-is-shockingly-addictive-1564152075">io9</a>, <a href="http://www.geek.com/games/fe26-is-a-2048-style-puzzle-game-about-solar-fusion-1592319/">Geek</a>, and many others. </p>
             <a class="btn btn-info" href="https://github.com/Newbrict/Fe26">GitHub</a>
             <a class="btn btn-success" href="https://newbrict.github.io/Fe26">Try it out</a>
           </div>
@@ -104,11 +104,27 @@
       </div>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/lib/jquery.min.js"></script>
-    <script src="js/lib/bootstrap.min.js"></script>
+    <!--
+		Placed at the end of the document so the pages load faster, also using
+		cdn to possibly load the page faster
+		-->
+
+		<!-- jquery cdn + fallback -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script>
+		if (!window.jQuery) {
+			document.write('<script src="js/lib/jquery-2.1.0.min.js"><\/script>');
+		}
+		</script>
+
+		<!-- bootstrap cdn + fallback -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script>
+		if (typeof $().modal != "function" ) {
+			document.write('<script src="js/lib/bootstrap.min.js"><\/script>');
+		}
+		</script>
+
     <script src="js/lib/d3.min.js"></script>
     <script src="js/lib/trianglify.min.js"></script>
     <script src="js/utils.js"></script>
