@@ -3,13 +3,13 @@ body {
 }
 
 .navbar-brand {
-	color: #FFF !important;
-	text-shadow: 0 0 4px rgba(0,0,0,.8);
+	color: #000 !important;
+	text-shadow: 0 0 10px rgba(0,0,0,.8);
 }
 
 .navbar-brand:hover {
 	color: #000 !important;
-	text-shadow: 0 0 4px rgba(128,128,128,1);
+	text-shadow: 0 0 10px rgba(0,10,218,.8);
 }
 
 #contact {
