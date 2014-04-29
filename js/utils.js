@@ -9,7 +9,6 @@ var pattern;
 	pattern = t.generate(w,h);
 })();
 
-// smooth scrolling
 $(document).ready(function() {
 	// jQuery SmoothScroll | Version 18-04-2013
 	$('a[href*=#]').click(function() {
