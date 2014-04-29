@@ -49,7 +49,7 @@ $(document).ready(function() {
 				var t = document.getElementById('email');
 				var s = t.innerHTML;
 				t.innerHTML = s.slice(0,i) + o[i] + s.slice(i+1,s.length);
-			}, Math.floor(Math.random()*1500));
+			}, Math.floor(Math.random()*1000));
 		}();
 	}
 
