@@ -4,12 +4,12 @@ body {
 
 .navbar-brand {
 	color: #000 !important;
-	text-shadow: 0 0 10px rgba(0,0,0,.8);
+	text-shadow: 0 0 5px rgba(0,0,0,.5);
 }
 
 .navbar-brand:hover {
 	color: #000 !important;
-	text-shadow: 0 0 10px rgba(0,10,218,.8);
+	text-shadow: 0 0 5px rgba(0,10,218,.5);
 }
 
 #contact {
