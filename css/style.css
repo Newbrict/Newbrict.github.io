@@ -26,7 +26,7 @@ body {
 	padding-top: 20px;
 	background: #FFF;
 
-	border-radius: 15px;
-	-moz-border-radius: 15px;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
 	box-shadow: 0 1px 0 rgba(0,0,0,.1), 0 0 20px rgba(0,0,0,0.45);
 }
